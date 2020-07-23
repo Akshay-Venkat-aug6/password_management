@@ -24,7 +24,7 @@ class Cretable extends React.Component{
     const responseList = await firebaseDB
                             .child('credentials')
                             .orderByChild('userid')
-                            .equalTo('801ca6b6-baa3-4486-99f3-7e6e1805e77b')
+                            .equalTo(window.sessionStorage.getItem('token'))
                             .once('value')
                             .then(snapShot =>{
                               return snapShot.val()
