@@ -46,7 +46,7 @@ class Login extends Component {
 
       let userDetails = { useremail: this.state.useremail, password: this.state.password}
       this.props.CHECK_USER(userDetails)
-      let login_check = localStorage.getItem('isValid')
+      let login_check = window.sessionStorage.getItem('isValid')
       
       if(login_check === "true"){
         this.setState({ isError: false, isSuccess: true })

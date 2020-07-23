@@ -36,8 +36,8 @@ const userReducer = async (state = initialState, action) => {
     case 'CHECK_USER':
       var stateObjs = { ...state }
       const data = await loginValidate(action.payload.email, action.payload.password);
-      console.log(data)
-      window.sessionStorage.setItem('isValid', data)
+      // console.log(data)
+      window.sessionStorage.setItem('isValid', data[0])
       return stateObjs
     case 'CHECK_ID':
       var stateObjs1 = { ...state }

@@ -92,7 +92,7 @@ class Signup extends Component {
       if(validate){
         const usersDetails = this.props.ADD_USER(this.state);
         
-        localStorage.setItem('token', usersDetails.payload.id);
+        window.sessionStorage.setItem('token', usersDetails.payload.id);
         this.setState({isError: false, success: 'Registered Succesffully!!!!!!'})
         if(!this.state.isError){
           // console.log(this.state.success)
@@ -121,9 +121,6 @@ class Signup extends Component {
   }
 
   render(){
-    
-    
-    
     return (
       <React.Fragment>
         <Credentialslayout 
