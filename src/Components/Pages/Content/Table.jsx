@@ -29,7 +29,7 @@ class Cretable extends React.Component{
                             .then(snapShot =>{
                               return snapShot.val()
                             })
-    
+    console.log(responseList)
     this.setState({responseList: responseList})
   }
 
