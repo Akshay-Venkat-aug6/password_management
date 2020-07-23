@@ -6,7 +6,7 @@ class Header extends React.Component{
   handleLogOut = () =>{
     window.sessionStorage.setItem('token', null);
     window.sessionStorage.setItem('isValid', null);
-    window.location = '/login'
+    this.props.history.push('/login')
   }
   render(){
     return(
