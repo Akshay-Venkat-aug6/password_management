@@ -47,7 +47,7 @@ class Login extends Component {
       let userDetails = { useremail: this.state.useremail, password: this.state.password}
       this.props.CHECK_USER(userDetails)
       let login_check = window.sessionStorage.getItem('isValid')
-      
+      console.log(login_check)
       if(login_check === "true"){
         this.setState({ isError: false, isSuccess: true })
         setTimeout(()=>{
