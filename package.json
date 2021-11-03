@@ -21,7 +21,7 @@
     "react-toastify": "^6.0.8",
     "redux": "^4.0.5",
     "uuidv4": "^6.1.1",
-    "validator": "^13.1.1"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
